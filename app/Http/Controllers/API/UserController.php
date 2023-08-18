@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Models\User;
+use App\Jobs\ProcessUserJob;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\UserResource;
@@ -33,6 +34,8 @@ class UserController extends Controller
         $validatedData['password'] = Hash::make($validatedData['password']);
 
         $user = User::create($validatedData);
+
+        ProcessUserJob::dispatch($user)->onQueue('user-processing');
 
         return response()->json([
             'status' => true,
