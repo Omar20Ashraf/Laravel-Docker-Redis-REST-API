@@ -1,13 +1,14 @@
-id: 51144
+id: 51166
 name: technical-task
 environments:
     production:
         memory: 1024
         cli-memory: 512
-        runtime: docker
+        runtime: 'php-8.2:al2'
         database: production-database
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
         deploy:
-            - 'php artisan migrate --seed'
+            - 'php artisan migrate --force'
+            - 'php artisan db:seed --force'
