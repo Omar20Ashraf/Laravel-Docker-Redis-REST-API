@@ -1,0 +1,584 @@
+{
+	"info": {
+		"_postman_id": "a9908443-ccbe-4cc5-87e6-d3fefa865d3e",
+		"name": "technical-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6732889"
+	},
+	"item": [
+		{
+			"name": "all users",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "{{site_url}}/users"
+			},
+			"response": [
+				{
+					"name": "all users example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{site_url}}/users"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:27:43 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:27:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Shemar Morar\",\n                \"email\": \"jalon.hodkiewicz@example.org\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Elizabeth Mante\",\n                \"email\": \"kfranecki@example.com\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Dr. Alison Gulgowski\",\n                \"email\": \"eduardo.cummerata@example.com\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Dimitri Blick DDS\",\n                \"email\": \"ccorkery@example.com\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Eryn Schumm\",\n                \"email\": \"reynolds.icie@example.net\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Thea Von\",\n                \"email\": \"dusty.fritsch@example.net\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Leila Schoen\",\n                \"email\": \"jenkins.adelle@example.com\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Prof. Ellie Gislason Sr.\",\n                \"email\": \"larissa.rath@example.org\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Bettye Schmeler\",\n                \"email\": \"torey.schamberger@example.org\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Reinhold Bergstrom\",\n                \"email\": \"lkihn@example.net\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Dr. Eriberto Tromp MD\",\n                \"email\": \"ezra.hauck@example.net\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Ms. Chelsea Goyette III\",\n                \"email\": \"kswift@example.com\"\n            },\n            {\n                \"id\": 13,\n                \"name\": \"Sierra Nikolaus\",\n                \"email\": \"savannah.harvey@example.com\"\n            },\n            {\n                \"id\": 14,\n                \"name\": \"Vena Schmidt Jr.\",\n                \"email\": \"elinor05@example.org\"\n            },\n            {\n                \"id\": 15,\n                \"name\": \"Annette Friesen\",\n                \"email\": \"xgutmann@example.com\"\n            },\n            {\n                \"id\": 16,\n                \"name\": \"Arch Zulauf\",\n                \"email\": \"charris@example.net\"\n            },\n            {\n                \"id\": 17,\n                \"name\": \"Madalyn Kuphal\",\n                \"email\": \"travis84@example.com\"\n            },\n            {\n                \"id\": 18,\n                \"name\": \"Vincent Ebert\",\n                \"email\": \"raven.yost@example.com\"\n            },\n            {\n                \"id\": 19,\n                \"name\": \"Anne Medhurst\",\n                \"email\": \"zack.jacobi@example.net\"\n            },\n            {\n                \"id\": 20,\n                \"name\": \"Prof. Joelle Pacocha DVM\",\n                \"email\": \"tbartoletti@example.org\"\n            },\n            {\n                \"id\": 21,\n                \"name\": \"Ms. Isabella Ward DVM\",\n                \"email\": \"juwan78@example.org\"\n            },\n            {\n                \"id\": 22,\n                \"name\": \"Lucie Effertz\",\n                \"email\": \"mosciski.isidro@example.net\"\n            },\n            {\n                \"id\": 23,\n                \"name\": \"Maida Auer\",\n                \"email\": \"claudie49@example.com\"\n            },\n            {\n                \"id\": 24,\n                \"name\": \"Lue Larson\",\n                \"email\": \"uveum@example.org\"\n            },\n            {\n                \"id\": 25,\n                \"name\": \"Mr. Brandt Bernier I\",\n                \"email\": \"creola.treutel@example.org\"\n            },\n            {\n                \"id\": 26,\n                \"name\": \"Ms. Maureen Roberts\",\n                \"email\": \"mritchie@example.com\"\n            },\n            {\n                \"id\": 27,\n                \"name\": \"Jaylon Romaguera Jr.\",\n                \"email\": \"raynor.vivian@example.com\"\n            },\n            {\n                \"id\": 28,\n                \"name\": \"Ezekiel Ullrich DDS\",\n                \"email\": \"gisselle.lynch@example.net\"\n            },\n            {\n                \"id\": 29,\n                \"name\": \"Dr. Ibrahim Stiedemann DVM\",\n                \"email\": \"gerlach.wellington@example.com\"\n            },\n            {\n                \"id\": 30,\n                \"name\": \"Tommie Buckridge\",\n                \"email\": \"omoore@example.org\"\n            },\n            {\n                \"id\": 31,\n                \"name\": \"Carolyn Treutel III\",\n                \"email\": \"vito50@example.org\"\n            },\n            {\n                \"id\": 32,\n                \"name\": \"Gaston Schroeder\",\n                \"email\": \"janae41@example.org\"\n            },\n            {\n                \"id\": 33,\n                \"name\": \"Alexander Lakin Sr.\",\n                \"email\": \"hortense66@example.net\"\n            },\n            {\n                \"id\": 34,\n                \"name\": \"Ms. Burdette Heidenreich\",\n                \"email\": \"elakin@example.net\"\n            },\n            {\n                \"id\": 35,\n                \"name\": \"Reuben Gutmann\",\n                \"email\": \"craig14@example.org\"\n            },\n            {\n                \"id\": 36,\n                \"name\": \"Destiny O'Reilly\",\n                \"email\": \"parisian.annalise@example.net\"\n            },\n            {\n                \"id\": 37,\n                \"name\": \"Sedrick Goyette\",\n                \"email\": \"antwon49@example.org\"\n            },\n            {\n                \"id\": 38,\n                \"name\": \"Walton Hill\",\n                \"email\": \"timmothy.schultz@example.org\"\n            },\n            {\n                \"id\": 39,\n                \"name\": \"Abbigail Fadel\",\n                \"email\": \"edward.hermann@example.com\"\n            },\n            {\n                \"id\": 40,\n                \"name\": \"Jimmie Lindgren III\",\n                \"email\": \"mwilkinson@example.org\"\n            },\n            {\n                \"id\": 41,\n                \"name\": \"Omari Kessler\",\n                \"email\": \"sheila39@example.com\"\n            },\n            {\n                \"id\": 42,\n                \"name\": \"Ashly Nader\",\n                \"email\": \"boehm.letha@example.net\"\n            },\n            {\n                \"id\": 43,\n                \"name\": \"Miss Phoebe Hills IV\",\n                \"email\": \"jalyn.harris@example.net\"\n            },\n            {\n                \"id\": 44,\n                \"name\": \"Adela Flatley Sr.\",\n                \"email\": \"urowe@example.org\"\n            },\n            {\n                \"id\": 45,\n                \"name\": \"Dr. Bernie Vandervort\",\n                \"email\": \"lsenger@example.com\"\n            },\n            {\n                \"id\": 46,\n                \"name\": \"Dr. Naomie Denesik\",\n                \"email\": \"helene.mayert@example.com\"\n            },\n            {\n                \"id\": 47,\n                \"name\": \"Ardith Kovacek\",\n                \"email\": \"zkrajcik@example.net\"\n            },\n            {\n                \"id\": 48,\n                \"name\": \"Connor Gibson DVM\",\n                \"email\": \"enikolaus@example.org\"\n            },\n            {\n                \"id\": 49,\n                \"name\": \"Mrs. Amira Baumbach Jr.\",\n                \"email\": \"garry59@example.net\"\n            },\n            {\n                \"id\": 50,\n                \"name\": \"Rosalind Stark\",\n                \"email\": \"yhowell@example.org\"\n            },\n            {\n                \"id\": 51,\n                \"name\": \"Bruce Schroeder\",\n                \"email\": \"kylie.olson@example.org\"\n            },\n            {\n                \"id\": 52,\n                \"name\": \"Dr. Evalyn Gleichner\",\n                \"email\": \"nyah.larson@example.net\"\n            },\n            {\n                \"id\": 53,\n                \"name\": \"Gonzalo Larkin\",\n                \"email\": \"lemke.amara@example.com\"\n            },\n            {\n                \"id\": 54,\n                \"name\": \"Dr. Bailey Dickinson\",\n                \"email\": \"sconroy@example.com\"\n            },\n            {\n                \"id\": 55,\n                \"name\": \"Mr. Terrill Sawayn\",\n                \"email\": \"franecki.esmeralda@example.com\"\n            },\n            {\n                \"id\": 56,\n                \"name\": \"Dr. Raheem Predovic Jr.\",\n                \"email\": \"lorenza63@example.org\"\n            },\n            {\n                \"id\": 57,\n                \"name\": \"Freeman Runte\",\n                \"email\": \"garret.wiza@example.com\"\n            },\n            {\n                \"id\": 58,\n                \"name\": \"Mrs. Alfreda Graham Sr.\",\n                \"email\": \"maritza.goldner@example.org\"\n            },\n            {\n                \"id\": 59,\n                \"name\": \"Art Farrell V\",\n                \"email\": \"david.hauck@example.org\"\n            },\n            {\n                \"id\": 60,\n                \"name\": \"Jermain Shields DDS\",\n                \"email\": \"sgrant@example.net\"\n            },\n            {\n                \"id\": 61,\n                \"name\": \"Turner Doyle\",\n                \"email\": \"bradly42@example.com\"\n            },\n            {\n                \"id\": 62,\n                \"name\": \"Dr. Ramon Reilly\",\n                \"email\": \"kyra.haley@example.net\"\n            },\n            {\n                \"id\": 63,\n                \"name\": \"Althea Schultz\",\n                \"email\": \"weber.lera@example.net\"\n            },\n            {\n                \"id\": 64,\n                \"name\": \"Dr. Hellen Ryan V\",\n                \"email\": \"dgerlach@example.com\"\n            },\n            {\n                \"id\": 65,\n                \"name\": \"Florence Schultz\",\n                \"email\": \"grady.loraine@example.com\"\n            },\n            {\n                \"id\": 66,\n                \"name\": \"Alf Maggio\",\n                \"email\": \"reynolds.kristina@example.net\"\n            },\n            {\n                \"id\": 67,\n                \"name\": \"Dr. Nicola Corwin PhD\",\n                \"email\": \"arlie23@example.com\"\n            },\n            {\n                \"id\": 68,\n                \"name\": \"Dr. Laurie Prohaska\",\n                \"email\": \"manuel53@example.net\"\n            },\n            {\n                \"id\": 69,\n                \"name\": \"Amaya Mueller\",\n                \"email\": \"schiller.cleveland@example.org\"\n            },\n            {\n                \"id\": 70,\n                \"name\": \"Morris Langworth MD\",\n                \"email\": \"julius59@example.org\"\n            },\n            {\n                \"id\": 71,\n                \"name\": \"Miss Augusta Nienow IV\",\n                \"email\": \"price.aurelia@example.net\"\n            },\n            {\n                \"id\": 72,\n                \"name\": \"Candace Walter\",\n                \"email\": \"turner14@example.com\"\n            },\n            {\n                \"id\": 73,\n                \"name\": \"Josue Grant\",\n                \"email\": \"laila29@example.net\"\n            },\n            {\n                \"id\": 74,\n                \"name\": \"Dr. Candace Upton IV\",\n                \"email\": \"conroy.adrain@example.org\"\n            },\n            {\n                \"id\": 75,\n                \"name\": \"Miss Crystel Runolfsson III\",\n                \"email\": \"daryl26@example.org\"\n            },\n            {\n                \"id\": 76,\n                \"name\": \"Dr. Zoie Lakin\",\n                \"email\": \"spencer.swaniawski@example.net\"\n            },\n            {\n                \"id\": 77,\n                \"name\": \"Avis Walker\",\n                \"email\": \"xfadel@example.net\"\n            },\n            {\n                \"id\": 78,\n                \"name\": \"Audreanne Shanahan MD\",\n                \"email\": \"nader.brianne@example.net\"\n            },\n            {\n                \"id\": 79,\n                \"name\": \"Mr. Brody Russel III\",\n                \"email\": \"rice.randal@example.net\"\n            },\n            {\n                \"id\": 80,\n                \"name\": \"Flo Rice\",\n                \"email\": \"donavon.schulist@example.net\"\n            },\n            {\n                \"id\": 81,\n                \"name\": \"Sandrine Eichmann\",\n                \"email\": \"amara.lang@example.net\"\n            },\n            {\n                \"id\": 82,\n                \"name\": \"Camilla Gusikowski\",\n                \"email\": \"rippin.gerda@example.org\"\n            },\n            {\n                \"id\": 83,\n                \"name\": \"Madelynn Swift II\",\n                \"email\": \"qconn@example.net\"\n            },\n            {\n                \"id\": 84,\n                \"name\": \"Prof. Aurelio Jaskolski\",\n                \"email\": \"brody25@example.org\"\n            },\n            {\n                \"id\": 85,\n                \"name\": \"Demarco Jones\",\n                \"email\": \"ljohnson@example.org\"\n            },\n            {\n                \"id\": 86,\n                \"name\": \"Lawrence Zulauf V\",\n                \"email\": \"felix95@example.net\"\n            },\n            {\n                \"id\": 87,\n                \"name\": \"Cassie Hermann\",\n                \"email\": \"sofia80@example.net\"\n            },\n            {\n                \"id\": 88,\n                \"name\": \"Mr. Darrion Zulauf\",\n                \"email\": \"scorwin@example.org\"\n            },\n            {\n                \"id\": 89,\n                \"name\": \"Jakayla Larson\",\n                \"email\": \"faye70@example.org\"\n            },\n            {\n                \"id\": 90,\n                \"name\": \"Mrs. Anika Hegmann\",\n                \"email\": \"alycia.huels@example.com\"\n            },\n            {\n                \"id\": 91,\n                \"name\": \"Darius Morissette\",\n                \"email\": \"cayla.swift@example.net\"\n            },\n            {\n                \"id\": 92,\n                \"name\": \"Dr. Mariane Cummerata DVM\",\n                \"email\": \"rhea89@example.org\"\n            },\n            {\n                \"id\": 93,\n                \"name\": \"Golda Rippin PhD\",\n                \"email\": \"deckow.eda@example.com\"\n            },\n            {\n                \"id\": 94,\n                \"name\": \"Doris Kris\",\n                \"email\": \"sporer.tiffany@example.org\"\n            },\n            {\n                \"id\": 95,\n                \"name\": \"Cordell Streich\",\n                \"email\": \"beier.marcellus@example.org\"\n            },\n            {\n                \"id\": 96,\n                \"name\": \"Adrien Stoltenberg\",\n                \"email\": \"destiney32@example.net\"\n            },\n            {\n                \"id\": 97,\n                \"name\": \"Prof. Freddie Stehr III\",\n                \"email\": \"catalina10@example.net\"\n            },\n            {\n                \"id\": 98,\n                \"name\": \"Norma Batz\",\n                \"email\": \"sboehm@example.net\"\n            },\n            {\n                \"id\": 99,\n                \"name\": \"Prof. Dana Fisher\",\n                \"email\": \"damian01@example.org\"\n            },\n            {\n                \"id\": 100,\n                \"name\": \"Lina Hane\",\n                \"email\": \"corwin.dulce@example.org\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "single user",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "{{site_url}}/users/{{user_id}}"
+			},
+			"response": [
+				{
+					"name": "single user example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{site_url}}/users/{{user_id}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:28:54 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:28:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Shemar Morar\",\n        \"email\": \"jalon.hodkiewicz@example.org\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "store user",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{site_url}}/users"
+			},
+			"response": [
+				{
+					"name": "store user example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{site_url}}/users"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:29:28 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:29:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Created Successfully\",\n    \"data\": {\n        \"data\": {\n            \"id\": 101,\n            \"name\": \"Test\",\n            \"email\": \"test@test.com\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update user",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "passwords",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "{{site_url}}/users/{{user_id}}"
+			},
+			"response": [
+				{
+					"name": "update user example",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "passwords",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "{{site_url}}/users/{{user_id}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:30:38 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:30:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Updated Successfully\",\n    \"data\": {\n        \"data\": {\n            \"id\": 101,\n            \"name\": \"Test\",\n            \"email\": \"test@test.com\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete user",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "{{site_url}}/users/{{user_id}}"
+			},
+			"response": [
+				{
+					"name": "delete user example",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{site_url}}/users/{{user_id}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:31:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Aug 2023 23:31:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Deleted Successfully\",\n    \"data\": []\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "site_url",
+			"value": "http://localhost/api",
+			"type": "string"
+		},
+		{
+			"key": "user_id",
+			"value": "1",
+			"type": "string"
+		}
+	]
+}
