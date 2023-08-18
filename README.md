@@ -2,6 +2,9 @@
 
 This is a Laravel project that demonstrates how to build a RESTful API using Laravel Vapor and implement a queue worker using Redis.
 
+# Project Url:
+[Project Url](https://3xrormh7omelyn6c6muz5xwygy0lashl.lambda-url.eu-west-3.on.aws)
+
 ## Setup and Deployment
 
 1. Clone the repository:
