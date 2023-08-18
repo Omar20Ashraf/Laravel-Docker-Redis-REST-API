@@ -1,4 +1,4 @@
-# Project Name
+# Laravel-Docker-Redis-REST-API
 
 This is a Laravel project that demonstrates how to build a RESTful API using Laravel Vapor and implement a queue worker using Redis.
 
