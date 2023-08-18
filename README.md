@@ -10,9 +10,9 @@ git clone https://github.com/Omar20Ashraf/Laravel-Docker-Redis-REST-API.git
 ```
 
 2. Navigate to the project directory:
-    cd your-project
+    cd Laravel-Docker-Redis-REST-AP
 
-3. Install the project dependencies as described here [Laravel Documentation](https://laravel.com/docs/9.x/sail#installing-composer-dependencies-for-existing-projects).:
+3. Install the project dependencies as described here [Laravel Documentation](https://laravel.com/docs/9.x/sail#installing-composer-dependencies-for-existing-projects):
 
 ```
     docker run --rm \
@@ -23,7 +23,7 @@ git clone https://github.com/Omar20Ashraf/Laravel-Docker-Redis-REST-API.git
     composer install --ignore-platform-reqs
 ```
 
-4. Create a copy of the .env.example file and name it .env. Update the database and Redis configuration settings in the .env file:
+4. Create a copy of the .env.example file and name it .env:
 ```
 cp .env.example .env
 ```
@@ -55,6 +55,23 @@ Run the queue worker to process background jobs:
 ```
 ./vendor/bin/sail artisan queue:work
 ```
+
+## Vapor Deployment
+Vapor is used for seamless deployment. Follow these steps to deploy your application:
+
+1. Add your Vapor credentials using this command:
+```
+./vendor/bin/sail php vendor/bin/vapor login
+```
+
+2. Configure application environments and database names in the vapor.yml file.
+
+3. Deploy each environment using this command:
+```
+./vendor/bin/sail php vendor/bin/vapor deploy env_name
+```
+
+You can find all the instructions about Vapor at [Laravel Vapor Documentation](https://docs.vapor.build/introduction.html). 
 
 ## Api Collection
 
